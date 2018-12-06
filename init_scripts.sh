@@ -14,7 +14,7 @@ echo 'cdl() { clear; cd "$@" && ls -Fhal --color=auto; }'  >> ${PROFILE}
 source $PROFILE
 
 BASHRC='/etc/bashrc'
-echo 'export PS1="\[\e[1;34m\]DEV\[\e[m\]\[\e[1;34m\]-\[\e[m\][\h:`pwd`] " ' >> ${BASHRC}
+echo 'export PS1="\[\e[1;34m\]DEV\[\e[m\]\[\e[1;34m\]-\[\e[m\][\h:\$(pwd)] " ' >> ${BASHRC}
 source $BASHRC
 
 VIMRC='/etc/vimrc'
