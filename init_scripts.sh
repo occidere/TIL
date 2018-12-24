@@ -7,6 +7,7 @@ yum install java-1.8.0-openjdk -y -q
 
 PROFILE='/etc/profile'
 echo "export LANG='ko_KR.UTF-8'" >> ${PROFILE}
+echo 'export TZ="Asia/Seoul"' >> ${PROFILE}
 echo "alias l='ls -Fah --color=auto'" >> ${PROFILE}
 echo "alias ll='ls -Fhal --color=auto'" >> ${PROFILE}
 echo 'cl() { clear; ls -Fhal --color=auto ;}' >> ${PROFILE}
