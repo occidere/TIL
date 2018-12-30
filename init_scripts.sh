@@ -3,7 +3,7 @@
 yum update -y -q && yum upgrade -y -q
 
 yum install epel-release -y -q
-yum install java-1.8.0-openjdk-devel.x86_64 -y -q
+yum install -y -q java-1.8.0-openjdk-devel.x86_64 java-11-openjdk-devel.x86_64
 
 PROFILE='/etc/profile'
 echo "export LANG='ko_KR.UTF-8'" >> ${PROFILE}
