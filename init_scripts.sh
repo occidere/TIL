@@ -15,6 +15,7 @@ echo "alias l='ls -Fah --color=auto'" >> ${PROFILE}
 echo "alias ll='ls -Fhal --color=auto'" >> ${PROFILE}
 echo 'cl() { clear; ls -Fhal --color=auto ;}' >> ${PROFILE}
 echo 'cdl() { clear; cd "$@" && ls -Fhal --color=auto; }'  >> ${PROFILE}
+# alias cdl 'clear; cd \!*; ls -Fhal --color=auto'
 source $PROFILE
 
 BASHRC='/etc/bashrc'
