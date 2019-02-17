@@ -32,3 +32,7 @@ source $VIMRC
 
 HOSTS='/etc/hosts'
 echo "127.0.0.1 `hostname`" >> $HOSTS
+
+# Add timestamp to .bash_history
+HISTTIMEFORMAT="[%Y-%m-%d %H:%M:%S] "
+export HISTTIMEFORMAT
