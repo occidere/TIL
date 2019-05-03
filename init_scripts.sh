@@ -16,6 +16,9 @@ echo "alias ll='ls -Fhal --color=auto'" >> ${PROFILE}
 echo 'cl() { clear; ls -Fhal --color=auto ;}' >> ${PROFILE}
 echo 'cdl() { clear; cd "$@" && ls -Fhal --color=auto; }'  >> ${PROFILE}
 # alias cdl 'clear; cd \!*; ls -Fhal --color=auto'
+echo "alias kc='kubectl'" >> ${PROFILE}
+echo "alias kcl='kubectl logs -f'" >> ${PROFILE}
+echo "alias dk='docker'" >> ${PROFILE}
 source $PROFILE
 
 BASHRC='/etc/bashrc'
