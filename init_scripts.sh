@@ -18,7 +18,10 @@ echo 'cdl() { clear; cd "$@" && ls -Fhal --color=auto; }'  >> ${PROFILE}
 # alias cdl 'clear; cd \!*; ls -Fhal --color=auto'
 echo "alias kc='kubectl'" >> ${PROFILE}
 echo "alias kcd='kubectl describe'" >> ${PROFILE}
+echo "alias kcdp='kubectl describe pod'" >> ${PROFILE}
 echo "alias kcl='kubectl logs -f'" >> ${PROFILE}
+echo "alias kcgp='kubectl get pods'" >> ${PROFILE}
+echo "alias kcgd='kubectl get deploy'" >> ${PROFILE}
 echo "alias dk='docker'" >> ${PROFILE}
 source $PROFILE
 
