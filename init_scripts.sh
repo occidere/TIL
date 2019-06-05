@@ -24,6 +24,7 @@ echo 'kclc() { POD_NAME="${1}" && DEPLOY_NAME="`echo ${POD_NAME} | awk -F '-' '{
 echo "alias kcg='kubectl get'" >> ${PROFILE}
 echo "alias kcgp='kubectl get pods -o wide'" >> ${PROFILE}
 echo "alias kcgd='kubectl get deploy'" >> ${PROFILE}
+echo "alias wkcgp='watch -n 1 \"kubectl get pods\"'"
 echo "alias kce='kubectl exec'" >> ${PROFILE}
 echo "alias kceit='kubectl exec -it'" >> ${PROFILE}
 echo "alias dk='docker'" >> ${PROFILE}
