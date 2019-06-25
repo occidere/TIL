@@ -8,7 +8,7 @@ yum install \
 	-y -q java-11-openjdk-devel.x86_64 \
 	-y -q htop
 
-mkdir -p ~/apps ~/scripts ~/logs ~/tmp
+mkdir -p ~/apps ~/scripts ~/logs ~/tmp ~/test
 
 PROFILE='/etc/profile'
 echo "export LANG='ko_KR.UTF-8'" >> ${PROFILE}
