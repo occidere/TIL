@@ -14,10 +14,10 @@ PROFILE='/etc/profile'
 echo "export LANG='ko_KR.UTF-8'" >> ${PROFILE}
 echo 'export TZ="Asia/Seoul"' >> ${PROFILE}
 echo "alias l='ls -Fah --color=auto'" >> ${PROFILE}
-echo "alias ll='ls -Fhal --color=auto'" >> ${PROFILE}
-echo 'cl() { clear; ls -Fhal --color=auto ;}' >> ${PROFILE}
-echo 'cdl() { clear; cd "$@" && ls -Fhal --color=auto; }'  >> ${PROFILE}
-# alias cdl 'clear; cd \!*; ls -Fhal --color=auto'
+echo "alias ll='ls -Fhalrt --color=auto'" >> ${PROFILE}
+echo 'cl() { clear; ls -Fhalrt --color=auto ;}' >> ${PROFILE}
+echo 'cdl() { clear; cd "$@" && ls -Fhalrt --color=auto; }'  >> ${PROFILE}
+# alias cdl 'clear; cd \!*; ls -Fhalrt --color=auto'
 echo "alias kc='kubectl'" >> ${PROFILE}
 echo "alias kcd='kubectl describe'" >> ${PROFILE}
 echo "alias kcdp='kubectl describe pod'" >> ${PROFILE}
