@@ -23,7 +23,7 @@ echo "alias kcd='kubectl describe'" >> ${PROFILE}
 echo "alias kcdp='kubectl describe pod'" >> ${PROFILE}
 echo "alias kcl='kubectl logs -f'" >> ${PROFILE}
 echo 'kclc() { POD_NAME="${1}" && DEPLOY_NAME="`echo ${POD_NAME} | awk -F '-' '{print $1"-"$2}'`" && kubectl logs -f "${POD_NAME}" -c "${DEPLOY_NAME}"; }' >> ${PROFILE}
-echo "kclp() { kubectl get pods | grep \"${1}\" | awk -F ' ' '{print $1}' | xargs -i -t kubectl logs -f {} ; }" >> ${PROFILE}
+echo "kclp() { kubectl get pods | grep \"\${1}\" | awk -F ' ' '{print \$1}' | xargs -i -t kubectl logs -f {} ; }" >> ${PROFILE}
 echo "alias kcg='kubectl get'" >> ${PROFILE}
 echo "alias kcgp='kubectl get pods -o wide'" >> ${PROFILE}
 echo "alias kcgd='kubectl get deploy'" >> ${PROFILE}
