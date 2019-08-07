@@ -18,6 +18,7 @@ echo "alias ll='ls -Fhalrt --color=auto'" >> ${PROFILE}
 echo 'cl() { clear; ls -Fhalrt --color=auto ;}' >> ${PROFILE}
 echo 'cdl() { clear; cd "$@" && ls -Fhalrt --color=auto; }'  >> ${PROFILE}
 # alias cdl 'clear; cd \!*; ls -Fhalrt --color=auto'
+echo "alias w1='watch -n 1 \"\$@\"'" >> ${PROFILE}
 echo "alias kc='kubectl'" >> ${PROFILE}
 echo "alias kcd='kubectl describe'" >> ${PROFILE}
 echo "alias kcdp='kubectl describe pod'" >> ${PROFILE}
