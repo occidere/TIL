@@ -20,6 +20,7 @@ echo 'cdl() { clear; cd "$@" && ls -Fhalrt --color=auto; }'  >> ${PROFILE}
 # alias cdl 'clear; cd \!*; ls -Fhalrt --color=auto'
 echo "alias w1='watch -n 1 \"\$@\"'" >> ${PROFILE}
 echo "alias kc='kubectl'" >> ${PROFILE}
+echo "alias kca='kubectl apply -f'" >> ${PROFILE}
 echo "alias kcd='kubectl describe'" >> ${PROFILE}
 echo "alias kcdp='kubectl describe pod'" >> ${PROFILE}
 echo "alias kcl='kubectl logs -f'" >> ${PROFILE}
