@@ -1,6 +1,7 @@
 # Today I Learned
 
-[![HitCount](http://hits.dwyl.io/occidere/TIL.svg)](http://hits.dwyl.io/occidere/TIL)
+[![HitCount](http://hits.dwyl.io/occidere/TIL.svg)](http://hits.dwyl.io/occidere/TIL) <img src="https://img.shields.io/github/languages/count/occidere/TIL"/> <img src="https://img.shields.io/github/languages/top/occidere/TIL"/>
+<img src="https://img.shields.io/github/issues/occidere/TIL"/> <img src="https://img.shields.io/github/last-commit/occidere/TIL"/> <img src="https://img.shields.io/github/commit-activity/w/occidere/TIL"/>
 
 ## What is this?
 
