@@ -1,5 +1,7 @@
 # Today I Learned
 
+[![HitCount](http://hits.dwyl.io/occidere/TIL.svg)](http://hits.dwyl.io/occidere/TIL)
+
 ## What is this?
 
 This repository is consisted of computer science knowledges that I learned every day.
