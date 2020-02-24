@@ -13,12 +13,19 @@ mkdir -p ~/apps ~/scripts ~/logs ~/tmp ~/test
 PROFILE='/etc/profile'
 echo "export LANG='ko_KR.UTF-8'" >> ${PROFILE}
 echo 'export TZ="Asia/Seoul"' >> ${PROFILE}
+
+# common
 echo "alias l='ls -Fah --color=auto'" >> ${PROFILE}
 echo "alias ll='ls -Fhalrt --color=auto'" >> ${PROFILE}
 echo 'cl() { clear; ls -Fhalrt --color=auto ;}' >> ${PROFILE}
 echo 'cdl() { clear; cd "$@" && ls -Fhalrt --color=auto; }'  >> ${PROFILE}
 # alias cdl 'clear; cd \!*; ls -Fhalrt --color=auto'
 echo "alias w1='watch -n 1 \"\$@\"'" >> ${PROFILE}
+echo 'lg() { ls -Fahrlt | grep "${1}"; }' >> ${PROFILE}
+echo 'clg() { clear; ls -Fahrlt | grep "${1}"; }' >> ${PROFILE}
+echo 'cdlg() { clear; cd "${1}" && ls -Fharlt | grep "${2}"; }' >> ${PROFILE}
+
+# k8s
 echo "alias kc='kubectl'" >> ${PROFILE}
 echo "alias kca='kubectl apply -f'" >> ${PROFILE}
 echo "alias kcd='kubectl describe'" >> ${PROFILE}
