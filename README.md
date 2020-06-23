@@ -10,13 +10,14 @@ This repository is consisted of computer science knowledges that I learned every
 
 ## Who am I?
 
-I'm building the pipelines that flow products from feeding to search at NAVER Corp.
+Build the products flowing pipelines from feeding to searching at NAVER Shopping.
+- Mainly use Spring Framework, but also properly use others like Python, Bash, etc.
+- Flow data through Kafka.
+- Use Hadoop, Hive and Spark to aggregate product information.
+- Index products in Oracle, Postgresql, MySQL and Elasticsearch.
+- Deploy & run applications on Kubernetes.
 
-Using Hadoop, Hive and Spark to aggregate product information.
-
-Indexing product information to Oracle, Postgresql and Elasticsearch.
-
-Also enjoying programming solve using algorithms on Leetcode, Baekjoon, etc.
+Also enjoying solve algorithms on Leetcode, Baekjoon, etc.
 
 
 ## Check my more information here
@@ -29,3 +30,13 @@ Also enjoying programming solve using algorithms on Leetcode, Baekjoon, etc.
     <a target="_blank" href="https://www.linkedin.com/in/sungjun-lee/"><img src="https://postfiles.pstatic.net/MjAxOTEyMjRfODYg/MDAxNTc3MTkyMTc4OTc3.qeoVgMlHyM-yRMraNaqGOhVQPWcWF1mr6LqQA1sZSZgg.xUnzMz4CwlPz5RaCYklHc0qnfs94KIgbhRZe0h9tCZQg.JPEG.occidere/SE-28328066-440e-4064-b86f-9ca78c93b191.jpg?type=w773" width="24"></a>
     <a target="_blank" href="https://occidere.blog.me"><img src="https://postfiles.pstatic.net/MjAxOTEyMzBfMjQ3/MDAxNTc3Njg5NDIzNTM4.Bb4I_JcTmoJTw5QopVY1_2-fFosbZUPz9j35wERCsDQg._fb8TvSH60N4X1xSHHEtnn_uLKlrSHejTymmPLVXXr8g.PNG.occidere/NAVER_BLOG_LOGO.png?type=w773" width="24"></a>
 </div>
+
+## Check my writings and presentations below
+
+1. Build monitioring system using Elastic Stack + Lambda
+    - Written on D2 (Naver tech blog)
+    - https://d2.naver.com/helloworld/9878588
+
+2. Configure Kubernetes pods autoscaling by detecting Kafka comsumer lag
+    - Presented in NAVER Engineering Day 2019
+    - https://blog.naver.com/occidere/221758990374
