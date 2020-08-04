@@ -1,16 +1,5 @@
-# Today I Learned
-
-[![HitCount](http://hits.dwyl.io/occidere/TIL.svg)](http://hits.dwyl.io/occidere/TIL) <img src="https://img.shields.io/github/languages/count/occidere/TIL"/> <img src="https://img.shields.io/github/languages/top/occidere/TIL"/>
-<img src="https://img.shields.io/github/issues/occidere/TIL"/> <img src="https://img.shields.io/github/last-commit/occidere/TIL"/> <img src="https://img.shields.io/github/commit-activity/w/occidere/TIL"/>
-
-## What is this?
-
-This repository is consisted of computer science knowledges that I learned every day.
-
-
 ## Who am I?
-
-Build the products flowing pipelines from feeding to searching at NAVER Shopping.
+Build the products flowing pipelines from feeding to searching at **Shopping Data Integration Dev** of **[NAVER Corp.](https://www.navercorp.com/)**
 - Mainly use Spring Framework, but also properly use others like Python, Bash, etc.
 - Flow data through Kafka.
 - Use Hadoop, Hive and Spark to aggregate product information.
@@ -19,9 +8,9 @@ Build the products flowing pipelines from feeding to searching at NAVER Shopping
 
 Also enjoying solve algorithms on Leetcode, Baekjoon, etc.
 
+<br>
 
-## Check my more information here
-
+### Check my additional info here!
 <div align="left">
     <a target="_blank" href="https://www.acmicpc.net/user/occidere"><img src="https://postfiles.pstatic.net/MjAxOTEyMjRfMjA5/MDAxNTc3MTkyNTc5Mjkx.p_Tb59oUPn3vNNRJKnSZWPTkdxywV0MRotMO8ARxFm8g.4Asj8GBetDaak_IRqUuIZirj7I52VXmA6ppxj25RI80g.PNG.occidere/boj.png?type=w773" width="24"></a>
     <a target="_blank" href="https://github.com/occidere"><img src="https://postfiles.pstatic.net/MjAxOTEyMjRfMjA2/MDAxNTc3MTkyNjQxMTE2.gKbaF34cMk4H7gGeNL6OO6ARFXgrxra1iSvn3DRFzAMg.TWVLm42SKE4yDn_eMTaU9BGEnU2YSbEV0pf8bHM0UjEg.PNG.occidere/GitHub-Mark-120px-plus.png?type=w773" width="24"></a>
@@ -31,12 +20,10 @@ Also enjoying solve algorithms on Leetcode, Baekjoon, etc.
     <a target="_blank" href="https://occidere.blog.me"><img src="https://postfiles.pstatic.net/MjAxOTEyMzBfMjQ3/MDAxNTc3Njg5NDIzNTM4.Bb4I_JcTmoJTw5QopVY1_2-fFosbZUPz9j35wERCsDQg._fb8TvSH60N4X1xSHHEtnn_uLKlrSHejTymmPLVXXr8g.PNG.occidere/NAVER_BLOG_LOGO.png?type=w773" width="24"></a>
 </div>
 
-## Check my writings and presentations below
+<br>
 
-1. Build monitioring system using Elastic Stack + Lambda
+### Don't forget my posts and presentations too!
+- [Build monitioring system using Elastic Stack + Lambda](https://d2.naver.com/helloworld/9878588)
     - Written on D2 (Naver tech blog)
-    - https://d2.naver.com/helloworld/9878588
-
-2. Configure Kubernetes pods autoscaling by detecting Kafka comsumer lag
+- [Configure Kubernetes pods autoscaling by detecting Kafka comsumer lag](https://blog.naver.com/occidere/221758990374)
     - Presented in NAVER Engineering Day 2019
-    - https://blog.naver.com/occidere/221758990374
