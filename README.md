@@ -3,7 +3,7 @@
 ![Github Status](https://github-readme-stats.vercel.app/api?username=occidere&count_private=true&show_icons=true)
 
 Build the products flowing pipelines from feeding to searching at **Shopping Data Integration Dev** of **[NAVER Corp.](https://www.navercorp.com/)** 
-- Mainly use Spring Framework, but also properly use others like Python, Bash, etc.
+- Mainly use Spring Framework, but also properly use others like Scala, Python, Bash and so on.
 - Flow data through Kafka.
 - Use Hadoop, Hive and Spark to aggregate product information.
 - Index products in Oracle, Postgresql, MySQL and Elasticsearch.
