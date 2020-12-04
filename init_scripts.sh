@@ -24,6 +24,7 @@ echo "alias w1='watch -n 1 \"\$@\"'" >> ${PROFILE}
 echo 'lg() { ls -Fahrlt | grep "${1}"; }' >> ${PROFILE}
 echo 'clg() { clear; ls -Fahrlt | grep "${1}"; }' >> ${PROFILE}
 echo 'cdlg() { clear; cd "${1}" && ls -Fharlt | grep "${2}"; }' >> ${PROFILE}
+echo "alias du1='du -h --max-depth=1'" >> ${PROFILE}
 
 # k8s
 echo "alias kc='kubectl'" >> ${PROFILE}
