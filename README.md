@@ -1,6 +1,6 @@
 ## Who am I?
 
-![Github Status](https://github-readme-stats.vercel.app/api?username=occidere&count_private=true&show_icons=true)
+![Github Status](https://github-readme-stats.vercel.app/api?username=occidere&count_private=true&show_icons=true&theme=react)
 
 Build the products flowing pipelines from feeding to searching at **Shopping Data Integration Dev** of **[NAVER Corp.](https://www.navercorp.com/)** 
 - Mainly use Spring Framework, but also properly use others like Scala, Python, Bash and so on.
