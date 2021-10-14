@@ -41,11 +41,16 @@ echo "alias wkcgp='watch -n 1 \"kubectl get pods\"'"
 echo "alias wkcgd='watch -n 1 \"kubectl get deploy\"'"
 echo "alias kce='kubectl exec'" >> ${PROFILE}
 echo "alias kceit='kubectl exec -it'" >> ${PROFILE}
+source $PROFILE
+
+# docker
 echo "alias dk='docker'" >> ${PROFILE}
+echo "alias dkrma='docker stop $(docker ps -aq) && docker rm $(docker ps -aq)'" >> ${PROFILE}
 source $PROFILE
 
 BASHRC='/etc/bashrc'
 echo 'export PS1="\[\e[1;34m\]DEV\[\e[m\]\[\e[1;34m\]-\[\e[m\][\h:\$(pwd)] " ' >> ${BASHRC}
+echo 'export HISTTIMEFORMAT="[%Y-%m-%d %H:%M:%S] "' >> ${BASHRC}
 source $BASHRC
 
 VIMRC='/etc/vimrc'
@@ -59,7 +64,3 @@ source $VIMRC
 
 HOSTS='/etc/hosts'
 echo "127.0.0.1 `hostname`" >> $HOSTS
-
-# Add timestamp to .bash_history
-HISTTIMEFORMAT="[%Y-%m-%d %H:%M:%S] "
-export HISTTIMEFORMAT
