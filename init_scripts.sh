@@ -45,6 +45,7 @@ source $PROFILE
 
 # docker
 echo "alias dk='docker'" >> ${PROFILE}
+echo "alias dkc='docker-compose'" >> ${PROFILE}
 echo "alias dkrma='docker stop $(docker ps -aq) && docker rm $(docker ps -aq)'" >> ${PROFILE}
 echo "alias dkpsa='docker ps -a'" >> ${PROFILE}
 source $PROFILE
