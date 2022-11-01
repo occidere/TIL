@@ -1,0 +1,14 @@
+[Unit]
+Description=zookeeper-server
+After=network.target
+
+[Service]
+Type=forking
+User=occidere
+Group=occidere
+SyslogIdentifier=zookeeper-server
+WorkingDirectory=/home/occidere/apps/zookeeper
+Restart=on-failure
+RestartSec=0s
+ExecStart=/home/occidere/apps/zookeeper/bin/zkServer.sh start
+ExecStop=/home/occidere/apps/zookeeper/bin/zkServer.sh stop

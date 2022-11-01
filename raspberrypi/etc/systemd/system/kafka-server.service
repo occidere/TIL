@@ -1,0 +1,14 @@
+[Unit]
+Description=kafka-server
+After=network.target
+
+[Service]
+Type=simple
+User=occidere
+Group=occidere
+SyslogIdentifier=kafka-server
+WorkingDirectory=/home/occidere/apps/kafka
+Restart=on-failure
+RestartSec=0s
+ExecStart=/home/occidere/apps/kafka/bin/kafka-server-start.sh /home/occidere/apps/kafka/config/server.properties
+ExecStop=/home/occidere/apps/kafka/bin/kafka-server-stop.sh

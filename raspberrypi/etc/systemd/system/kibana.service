@@ -1,0 +1,18 @@
+[Unit]
+Description=Kibana
+
+[Service]
+Type=simple
+User=occidere
+Group=occidere
+# Load env vars from /etc/default/ and /etc/sysconfig/ if they exist.
+# Prefixing the path with '-' makes it try to load, but if the file doesn't
+# exist, it continues onward.
+ExecStart=/home/occidere/apps/kibana/bin/kibana "-c /home/occidere/apps/kibana/config/kibana.yml"
+Restart=on-failure
+RestartSec=3
+StartLimitBurst=3
+StartLimitInterval=60
+
+[Install]
+WantedBy=multi-user.target

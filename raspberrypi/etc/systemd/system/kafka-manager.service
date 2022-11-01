@@ -1,0 +1,13 @@
+[Unit]
+Description=Kafka manager
+After=network.target
+
+[Service]
+User=occidere
+Group=occidere
+ExecStart=/home/occidere/apps/kafka-manager/bin/kafka-manager -Dconfig.file=/home/occidere/apps/kafka-manager/conf/application.conf
+ExecStop=/home/occidere/apps/kafka-manager/bin/kafka-manager stop
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

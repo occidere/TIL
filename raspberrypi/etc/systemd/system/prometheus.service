@@ -1,0 +1,17 @@
+[Unit]
+Description=Prometheus
+Wants=network-online.target
+After=networ-online.target
+
+[Service]
+User=prometheus
+Group=prometheus
+Type=simple
+ExecStart=/home/occidere/apps/prometheus/prometheus \
+--config.file /home/occidere/apps/prometheus/prometheus.yml \
+--storage.tsdb.path /home/occidere/apps/prometheus/data/ \
+--web.console.templates=/home/occidere/apps/prometheus/consoles \
+--web.console.libraries=/home/occidere/apps/prometheus/console_libraries
+
+[Install]
+WantedBy=multi-user.target
