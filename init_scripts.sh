@@ -26,6 +26,16 @@ echo 'clg() { clear; ls -Fahrlt | grep "${1}"; }' >> ${PROFILE}
 echo 'cdlg() { clear; cd "${1}" && ls -Fharlt | grep "${2}"; }' >> ${PROFILE}
 echo "alias du1='du -h --max-depth=1'" >> ${PROFILE}
 
+# Terraform
+echo "alias tf='terraform'" >> ${PROFILE}
+
+# docker
+echo "alias dk='docker'" >> ${PROFILE}
+echo "alias dkc='docker-compose'" >> ${PROFILE}
+echo "alias dkrma='docker stop $(docker ps -aq) && docker rm $(docker ps -aq)'" >> ${PROFILE}
+echo "alias dkpsa='docker ps -a'" >> ${PROFILE}
+source $PROFILE
+
 # k8s
 echo "alias kc='kubectl'" >> ${PROFILE}
 echo "alias kca='kubectl apply -f'" >> ${PROFILE}
@@ -41,13 +51,6 @@ echo "alias wkcgp='watch -n 1 \"kubectl get pods\"'"
 echo "alias wkcgd='watch -n 1 \"kubectl get deploy\"'"
 echo "alias kce='kubectl exec'" >> ${PROFILE}
 echo "alias kceit='kubectl exec -it'" >> ${PROFILE}
-source $PROFILE
-
-# docker
-echo "alias dk='docker'" >> ${PROFILE}
-echo "alias dkc='docker-compose'" >> ${PROFILE}
-echo "alias dkrma='docker stop $(docker ps -aq) && docker rm $(docker ps -aq)'" >> ${PROFILE}
-echo "alias dkpsa='docker ps -a'" >> ${PROFILE}
 source $PROFILE
 
 BASHRC='/etc/bashrc'
